@@ -42,6 +42,11 @@ class ViewController: UIViewController {
                     self.resultLabel.text = result
                     self.resultLabel.isHidden = false
                 }
+                // 呼叫方法3 closure 省略
+                checkPrime(withNumber: inputNumber){
+                    self.resultLabel.text = $0
+                    self.resultLabel.isHidden = false
+                }
             }
         }
         
