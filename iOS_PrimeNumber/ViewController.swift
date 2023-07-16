@@ -22,6 +22,13 @@ class ViewController: UIViewController {
         
         // 1. take out the number string from the inputTextField
         if let inputText = inputTextField.text {
+            
+            // 2. convert the number string to Int // 小心沒有輸入數字
+            if let inputNumber = Int(inputText) {
+                
+                // 連續 Optional Binding // 可以將 1. 2. 合併
+                // if let inputText = inputTextField.text, let inputNumber = Int(inputText) {}
+            }
         }
         
     }
