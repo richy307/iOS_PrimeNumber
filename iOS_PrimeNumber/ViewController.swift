@@ -28,6 +28,13 @@ class ViewController: UIViewController {
                 
                 // 連續 Optional Binding // 可以將 1. 2. 合併
                 // if let inputText = inputTextField.text, let inputNumber = Int(inputText) {}
+                
+                // 3. Using the checkPrime function to get result
+                // 4. Using the resultLabel to show result
+                
+                // 呼叫方法1
+                resultLabel.text = checkPrime(withNumber: inputNumber)
+                resultLabel.isHidden = false // 顯示
             }
         }
         
