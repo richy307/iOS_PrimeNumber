@@ -25,6 +25,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        // push the keyboard up // 觸發 input 顯示鍵盤
+        inputTextField.becomeFirstResponder()
     }
 
     
