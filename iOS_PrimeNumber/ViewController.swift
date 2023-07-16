@@ -9,6 +9,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var inputTextField: UITextField!
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    @IBAction func doThePrimeTest(_ sender: UIButton) {
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
