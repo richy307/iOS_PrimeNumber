@@ -19,6 +19,11 @@ class ViewController: UIViewController {
     @IBOutlet weak var resultLabel: UILabel!
     
     @IBAction func doThePrimeTest(_ sender: UIButton) {
+        
+        // 1. take out the number string from the inputTextField
+        if let inputText = inputTextField.text {
+        }
+        
     }
     
     
