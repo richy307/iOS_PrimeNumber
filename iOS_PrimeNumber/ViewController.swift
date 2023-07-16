@@ -50,6 +50,8 @@ class ViewController: UIViewController {
             }
         }
         
+        // 點擊後清空 input
+        inputTextField.text = ""
     }
     
     
