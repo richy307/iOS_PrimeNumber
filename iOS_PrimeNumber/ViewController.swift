@@ -26,7 +26,7 @@ class ViewController: UIViewController {
             // 2. convert the number string to Int // 小心沒有輸入數字
             if let inputNumber = Int(inputText) {
                 
-                // 連續 Optional Binding // 可以將 1. 2. 合併
+                // 連續 Optional Binding // 可以將 1. 2. 合併 寫在同一行
                 // if let inputText = inputTextField.text, let inputNumber = Int(inputText) {}
                 
                 // 3. Using the checkPrime function to get result
@@ -42,7 +42,7 @@ class ViewController: UIViewController {
                     self.resultLabel.text = result
                     self.resultLabel.isHidden = false
                 }
-                // 呼叫方法3 closure 省略
+                // 呼叫方法3 closure 省略寫法 // 因為closure 是最後一個參數 所以整個被放在小括弧外面
                 checkPrime(withNumber: inputNumber){
                     self.resultLabel.text = $0
                     self.resultLabel.isHidden = false
